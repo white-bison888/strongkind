@@ -1,7 +1,7 @@
 <!doctype html>
 <!-- ЧЕРНОВИК Claude, обновлён 27.10.2026. Не опубликован. Перед публикацией: адрес поддержки и место публикации (решение Mikita).
      Основа — код приложения на коммите после b96b739: сетевых запросов нет, данные в UserDefaults на телефоне (входят в резервные копии iPhone),
-     Apple Health — запись тренировки и, с 1.1 (6), чтение пульса и калорий за время тренировки, по согласию, уведомления — только локальные, PrivacyInfo: отслеживания нет, данные не собираются.
+     Apple Health — запись тренировки, с 1.1 (11) тренировка Health во время занятия (сигналы под замком), с 1.1 (6) чтение пульса и калорий за время тренировки, по согласию, уведомления — только локальные, PrivacyInfo: отслеживания нет, данные не собираются.
      Текст совпадает с экраном «Политика конфиденциальности» в приложении (Settings.swift, PrivacyView). -->
 <html lang="en">
 <head>
@@ -28,7 +28,7 @@
   <p class="lang"><a href="#en">English</a> · <a href="#ru">Русский</a></p>
 
   <h1 id="en">Strongkind — Privacy Policy</h1>
-  <p class="updated">Last updated: 14 November 2026</p>
+  <p class="updated">Last updated: 21 November 2026</p>
   <p class="lead">The developer does not receive, collect or share your personal data.</p>
   <section>
     <h2>What stays on your phone</h2>
@@ -36,11 +36,11 @@
   </section>
   <section>
     <h2>Apple Health</h2>
-    <p>If you turn on Save to Apple Health, the app asks for permission to write a finished workout to Apple Health: a strength workout with its start and end time. If you tap Heart rate from Apple Health, the app asks for permission to read your heart rate and active energy, and reads them only for the time of your workouts, to show them on the workout's screen. They are read on the phone each time and are not stored by the app or sent anywhere. You can turn both off at any time in the Health settings of your iPhone.</p>
+    <p>When a workout starts, the app asks for permission to write workouts to Apple Health. With it, the workout runs as an Apple Health workout session, so the countdown and the signals are heard with the phone locked; the session itself saves nothing. A finished workout — a strength workout with its start and end time — is written only if you turn on Save to Apple Health. If you tap Heart rate from Apple Health, the app asks for permission to read your heart rate and active energy, and reads them only for the time of your workouts, to show them on the workout's screen. They are read on the phone each time and are not stored by the app or sent anywhere. You can turn both off at any time in the Health settings of your iPhone.</p>
   </section>
   <section>
     <h2>Notifications</h2>
-    <p>If you allow notifications, the app schedules a reminder on your phone for the end of a rest or a timed set; on iOS 26 and later, if you allow it, the end of a rest can also come as a system timer. While you train, your current exercise and rest are shown on the lock screen, and widgets show your next workout and your week. All of this is created and shown by your iPhone only; nothing is sent anywhere. You can turn it off in the Settings of your iPhone.</p>
+    <p>If you allow notifications, the app schedules a reminder on your phone for the end of a rest or a timed set and for switching sides. While you train, your current exercise and rest are shown on the lock screen, and widgets show your next workout and your week. All of this is created and shown by your iPhone only; nothing is sent anywhere. You can turn it off in the Settings of your iPhone.</p>
   </section>
   <section>
     <h2>Body: weight, measurements, photos</h2>
@@ -66,7 +66,7 @@
   <hr>
 
   <h1 id="ru">Strongkind — политика конфиденциальности</h1>
-  <p class="updated">Обновлено: 14 ноября 2026</p>
+  <p class="updated">Обновлено: 21 ноября 2026</p>
   <p class="lead">Разработчик не получает, не собирает и не передаёт твои персональные данные.</p>
   <section>
     <h2>Что остаётся на телефоне</h2>
@@ -74,11 +74,11 @@
   </section>
   <section>
     <h2>Apple Health</h2>
-    <p>Если включить «Сохранить в Apple Health», приложение попросит разрешение записывать законченную тренировку: силовая тренировка, её начало и конец. Если нажать «Пульс из Apple Health», приложение попросит разрешение читать пульс и активные калории и читает их только за время твоих тренировок, чтобы показать на экране тренировки. Они читаются на телефоне каждый раз заново, приложение их не хранит и никуда не отправляет. И то и другое можно выключить в любой момент в настройках «Здоровья» на iPhone.</p>
+    <p>Когда начинается тренировка, приложение просит разрешение записывать тренировки в Apple Health. С ним тренировка идёт как тренировка Apple Health, поэтому отсчёт и сигналы слышны и с заблокированным экраном; сама она ничего не записывает. Законченная тренировка — силовая, с её началом и концом — записывается, только если включить «Сохранить в Apple Health». Если нажать «Пульс из Apple Health», приложение попросит разрешение читать пульс и активные калории и читает их только за время твоих тренировок, чтобы показать на экране тренировки. Они читаются на телефоне каждый раз заново, приложение их не хранит и никуда не отправляет. И то и другое можно выключить в любой момент в настройках «Здоровья» на iPhone.</p>
   </section>
   <section>
     <h2>Уведомления</h2>
-    <p>Если ты разрешишь уведомления, приложение ставит на телефоне напоминание о конце отдыха или подхода на время; на iOS 26 и новее, если разрешишь, конец отдыха может приходить и системным таймером. Во время тренировки текущее упражнение и отдых видны на экране блокировки, а виджеты показывают следующую тренировку и неделю. Всё это создаёт и показывает только твой iPhone, никуда ничего не отправляется. Выключить можно в Настройках iPhone.</p>
+    <p>Если ты разрешишь уведомления, приложение ставит на телефоне напоминание о конце отдыха или подхода на время и о смене стороны. Во время тренировки текущее упражнение и отдых видны на экране блокировки, а виджеты показывают следующую тренировку и неделю. Всё это создаёт и показывает только твой iPhone, никуда ничего не отправляется. Выключить можно в Настройках iPhone.</p>
   </section>
   <section>
     <h2>Тело: вес, замеры, фото</h2>
